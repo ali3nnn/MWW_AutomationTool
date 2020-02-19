@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{5310B010-5790-43B8-B837-65E4256AB03B}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MWW_test/MainActivity.cs">
+    <Files>
+      <File FileName="MWW_test/MainActivity.cs" Line="43" Column="40" />
+      <File FileName="MWW_test/DemontareActivity.cs" Line="25" Column="10" />
+      <File FileName="MWW_test/InfoActivity.cs" Line="24" Column="53" />
+      <File FileName="MWW_test/Resources/layout/activity_main.xml" Line="12" Column="22" />
+      <File FileName="MWW_test/Resources/layout/infoAct.xml" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MWW_test" expanded="True">
+            <Node name="MWW_test" expanded="True">
+              <Node name="Resources" expanded="True">
+                <Node name="layout" expanded="True" />
+              </Node>
+              <Node name="MainActivity.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.MWW__test AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.pixel_2_pie_9_0_-_api_28" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

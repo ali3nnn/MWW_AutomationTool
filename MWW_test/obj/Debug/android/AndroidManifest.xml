@@ -12,6 +12,8 @@
       </intent-filter>
     </activity>
     <activity android:label="MontareActivity" android:name="crc64c0968eda899bde30.MontareActivity" />
+    <activity android:label="DemontareActivity" android:name="crc64c0968eda899bde30.DemontareActivity" />
+    <activity android:label="InfoActivity" android:name="crc64c0968eda899bde30.InfoActivity" />
     <service android:name="crc64a98abb514ffad9f1.KeepAliveService" />
     <receiver android:enabled="true" android:exported="false" android:label="Essentials Battery Broadcast Receiver" android:name="crc64a0e0a82d0db9a07d.BatteryBroadcastReceiver" />
     <receiver android:enabled="true" android:exported="false" android:label="Essentials Energy Saver Broadcast Receiver" android:name="crc64a0e0a82d0db9a07d.EnergySaverBroadcastReceiver" />

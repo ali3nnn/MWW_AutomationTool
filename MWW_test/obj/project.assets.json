@@ -1557,11 +1557,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/alexmac/Documents/MWW_test/MWW_test/MWW_test.csproj",
+      "projectUniqueName": "/Users/alexmac/Documents/MWW_AutomationTool/MWW_test/MWW_test.csproj",
       "projectName": "MWW_test",
-      "projectPath": "/Users/alexmac/Documents/MWW_test/MWW_test/MWW_test.csproj",
+      "projectPath": "/Users/alexmac/Documents/MWW_AutomationTool/MWW_test/MWW_test.csproj",
       "packagesPath": "/Users/alexmac/.nuget/packages/",
-      "outputPath": "/Users/alexmac/Documents/MWW_test/MWW_test/obj/",
+      "outputPath": "/Users/alexmac/Documents/MWW_AutomationTool/MWW_test/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
