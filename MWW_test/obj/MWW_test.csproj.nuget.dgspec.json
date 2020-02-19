@@ -1,0 +1,60 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/alexmac/Documents/MWW_test/MWW_test/MWW_test.csproj": {}
+  },
+  "projects": {
+    "/Users/alexmac/Documents/MWW_test/MWW_test/MWW_test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/alexmac/Documents/MWW_test/MWW_test/MWW_test.csproj",
+        "projectName": "MWW_test",
+        "projectPath": "/Users/alexmac/Documents/MWW_test/MWW_test/MWW_test.csproj",
+        "packagesPath": "/Users/alexmac/.nuget/packages/",
+        "outputPath": "/Users/alexmac/Documents/MWW_test/MWW_test/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "/Users/alexmac/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid90"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid90": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid90": {
+          "dependencies": {
+            "Xamarin.Android.Support.Core.Utils": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.Android.Support.CustomTabs": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.Android.Support.Design": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.Android.Support.v7.CardView": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.3.1, )"
+            }
+          }
+        }
+      }
+    }
+  }
+}
