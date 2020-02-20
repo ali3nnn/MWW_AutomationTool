@@ -66,6 +66,13 @@
     <Compile Include="MontareActivity.cs" />
     <Compile Include="DemontareActivity.cs" />
     <Compile Include="InfoActivity.cs" />
+    <Compile Include="NdefMessageParser.cs" />
+    <Compile Include="IParsedNdefRecord.cs" />
+    <Compile Include="UriRecord.cs" />
+    <Compile Include="TextRecord.cs" />
+    <Compile Include="SmartPoster.cs" />
+    <Compile Include="Payload.cs" />
+    <Compile Include="Utility\Utility.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -112,6 +119,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
+    <Folder Include="Utility\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Android.Support.Design" Version="28.0.0.3" />
@@ -121,6 +129,12 @@
       <Version>28.0.0.3</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
+    <PackageReference Include="Xamarin.Forms">
+      <Version>4.4.0.991640</Version>
+    </PackageReference>
+    <PackageReference Include="Matcha.BackgroundService">
+      <Version>1.0.5478</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\mipmap-hdpi\bg.png" />

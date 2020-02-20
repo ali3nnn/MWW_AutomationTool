@@ -3,6 +3,13 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "MWW_test.dll" comes first in this list. */
 		"MWW_test.dll",
+		"FormsViewGroup.dll",
+		"Matcha.BackgroundService.dll",
+		"Matcha.BackgroundService.Droid.dll",
+		"System.Reactive.Core.dll",
+		"System.Reactive.Interfaces.dll",
+		"System.Reactive.Linq.dll",
+		"System.Reactive.PlatformServices.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Core.Runtime.dll",
 		"Xamarin.Android.Arch.Lifecycle.Common.dll",
@@ -28,10 +35,12 @@ public class MonoPackageManager_Resources {
 		"Xamarin.Android.Support.Interpolator.dll",
 		"Xamarin.Android.Support.Loader.dll",
 		"Xamarin.Android.Support.LocalBroadcastManager.dll",
+		"Xamarin.Android.Support.Media.Compat.dll",
 		"Xamarin.Android.Support.Print.dll",
 		"Xamarin.Android.Support.SlidingPaneLayout.dll",
 		"Xamarin.Android.Support.SwipeRefreshLayout.dll",
 		"Xamarin.Android.Support.Transition.dll",
+		"Xamarin.Android.Support.v4.dll",
 		"Xamarin.Android.Support.v7.AppCompat.dll",
 		"Xamarin.Android.Support.v7.CardView.dll",
 		"Xamarin.Android.Support.v7.RecyclerView.dll",
@@ -39,6 +48,10 @@ public class MonoPackageManager_Resources {
 		"Xamarin.Android.Support.VersionedParcelable.dll",
 		"Xamarin.Android.Support.ViewPager.dll",
 		"Xamarin.Essentials.dll",
+		"Xamarin.Forms.Core.dll",
+		"Xamarin.Forms.Platform.Android.dll",
+		"Xamarin.Forms.Platform.dll",
+		"Xamarin.Forms.Xaml.dll",
 	};
 	public static String[] Dependencies = new String[]{
 	};

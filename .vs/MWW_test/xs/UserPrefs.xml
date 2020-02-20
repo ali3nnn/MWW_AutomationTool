@@ -1,20 +1,18 @@
 ﻿<Properties StartupConfiguration="{5310B010-5790-43B8-B837-65E4256AB03B}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="MWW_test/MainActivity.cs">
     <Files>
-      <File FileName="MWW_test/MainActivity.cs" Line="43" Column="40" />
-      <File FileName="MWW_test/DemontareActivity.cs" Line="25" Column="10" />
-      <File FileName="MWW_test/InfoActivity.cs" Line="24" Column="53" />
-      <File FileName="MWW_test/Resources/layout/activity_main.xml" Line="12" Column="22" />
-      <File FileName="MWW_test/Resources/layout/infoAct.xml" Line="1" Column="1" />
+      <File FileName="MWW_test/MainActivity.cs" Line="144" Column="105" />
+      <File FileName="MWW_test/MontareActivity.cs" Line="38" Column="9" />
+      <File FileName="MWW_test/Resources/layout/montareAct.xml" Line="27" Column="22" />
+      <File FileName="MWW_test/UriRecord.cs" Line="111" Column="10" />
+      <File FileName="MWW_test/Resources/layout/activity_main.xml" Line="88" Column="32" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MWW_test" expanded="True">
             <Node name="MWW_test" expanded="True">
-              <Node name="Resources" expanded="True">
-                <Node name="layout" expanded="True" />
-              </Node>
+              <Node name="Properties" expanded="True" />
               <Node name="MainActivity.cs" selected="True" />
             </Node>
           </Node>
@@ -22,7 +20,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.MWW__test AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.pixel_2_pie_9_0_-_api_28" />
+  <MonoDevelop.Ide.ItemProperties.MWW__test AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.ad51a832" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

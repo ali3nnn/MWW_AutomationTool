@@ -78,6 +78,14 @@
 				android:layout_margin="20dp"
 				android:id="@+id/buttonIesire" />
 	</GridLayout>
+		<TextView
+			android:text=""
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#FFFF"
+			android:id="@+id/infoMsg" />
 
     </LinearLayout>
 
