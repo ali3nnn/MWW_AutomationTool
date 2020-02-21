@@ -3,6 +3,7 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "MWW_test.dll" comes first in this list. */
 		"MWW_test.dll",
+		"EasySplashScreen.dll",
 		"FormsViewGroup.dll",
 		"Matcha.BackgroundService.dll",
 		"Matcha.BackgroundService.Droid.dll",
@@ -55,5 +56,5 @@ public class MonoPackageManager_Resources {
 	};
 	public static String[] Dependencies = new String[]{
 	};
-	public static String ApiPackageName = "Mono.Android.Platform.ApiLevel_28";
+	public static String ApiPackageName = null;
 }

@@ -19,6 +19,16 @@
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"/>
     <TextView
+		android:text="Scaneaza un LF"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:id="@+id/textViewLF"
+		android:textColor="@android:color/white"
+		android:textSize="25dp"
+		android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+    <TextView
 		android:text="TAG TEXT"
 		android:textAppearance="?android:attr/textAppearanceMedium"
 		android:id="@+id/textView2"

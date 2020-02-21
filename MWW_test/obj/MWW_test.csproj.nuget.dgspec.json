@@ -32,6 +32,10 @@
       "frameworks": {
         "monoandroid90": {
           "dependencies": {
+            "EasySplashScreen": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "Matcha.BackgroundService": {
               "target": "Package",
               "version": "[1.0.5478, )"

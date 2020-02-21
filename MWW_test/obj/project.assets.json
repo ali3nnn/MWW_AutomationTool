@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v9.0": {
+      "EasySplashScreen/3.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/monoandroid81/EasySplashScreen.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid81/EasySplashScreen.dll": {}
+        }
+      },
       "Matcha.BackgroundService/1.0.5478": {
         "type": "package",
         "dependencies": {
@@ -1036,6 +1045,18 @@
     }
   },
   "libraries": {
+    "EasySplashScreen/3.0.0": {
+      "sha512": "ejLsWgVYi0jkjuaTiEoyquL5UNjGzEa4TrIT3NkeH0XhanEzRbTrJo+eiuQt1Oix2rmMCsfKGfCWJi6GlP8iEw==",
+      "type": "package",
+      "path": "easysplashscreen/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "easysplashscreen.3.0.0.nupkg.sha512",
+        "easysplashscreen.nuspec",
+        "lib/monoandroid81/EasySplashScreen.dll"
+      ]
+    },
     "Matcha.BackgroundService/1.0.5478": {
       "sha512": "qqRwQfuLLHDY3DlIVmzixLj9bgi1ZDQUxTcFVaa70K6FVSe/8HDt989PKzqU0pywn2v8mheMVH1BLMgyh/BcHw==",
       "type": "package",
@@ -3244,6 +3265,7 @@
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v9.0": [
+      "EasySplashScreen >= 3.0.0",
       "Matcha.BackgroundService >= 1.0.5478",
       "Xamarin.Android.Support.Core.Utils >= 28.0.0.3",
       "Xamarin.Android.Support.CustomTabs >= 28.0.0.3",
@@ -3284,6 +3306,10 @@
     "frameworks": {
       "monoandroid90": {
         "dependencies": {
+          "EasySplashScreen": {
+            "target": "Package",
+            "version": "[3.0.0, )"
+          },
           "Matcha.BackgroundService": {
             "target": "Package",
             "version": "[1.0.5478, )"

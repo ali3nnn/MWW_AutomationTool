@@ -1,11 +1,9 @@
 ﻿<Properties StartupConfiguration="{5310B010-5790-43B8-B837-65E4256AB03B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MWW_test/MainActivity.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MWW_test/Resources/layout/montareAct.xml">
     <Files>
-      <File FileName="MWW_test/MainActivity.cs" Line="144" Column="105" />
-      <File FileName="MWW_test/MontareActivity.cs" Line="38" Column="9" />
-      <File FileName="MWW_test/Resources/layout/montareAct.xml" Line="27" Column="22" />
-      <File FileName="MWW_test/UriRecord.cs" Line="111" Column="10" />
-      <File FileName="MWW_test/Resources/layout/activity_main.xml" Line="88" Column="32" />
+      <File FileName="MWW_test/MainActivity.cs" Line="50" Column="74" />
+      <File FileName="MWW_test/Resources/layout/activity_main.xml" Line="65" Column="44" />
+      <File FileName="MWW_test/Resources/layout/montareAct.xml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,7 +11,12 @@
           <Node name="MWW_test" expanded="True">
             <Node name="MWW_test" expanded="True">
               <Node name="Properties" expanded="True" />
-              <Node name="MainActivity.cs" selected="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="layout" expanded="True">
+                  <Node name="montareAct.xml" selected="True" />
+                </Node>
+                <Node name="values" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>

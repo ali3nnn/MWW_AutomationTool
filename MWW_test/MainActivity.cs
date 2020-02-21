@@ -16,6 +16,7 @@ using Android.Support.V4.Util;
 using Java.Util;
 using Button = Android.Widget.Button;
 using Matcha.BackgroundService.Droid;
+using GR.Net.Maroulis.Library;
 
 namespace MWW_test
 {
@@ -25,14 +26,12 @@ namespace MWW_test
     [Activity(Label = "MWW_test", Theme = "@style/AppTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     [IntentFilter(new[] { NfcAdapter.ActionNdefDiscovered, NfcAdapter.ActionTagDiscovered, Intent.CategoryDefault })]
 
-    //[Activity(Label = "MontareActivity", Theme = "@style/AppTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
-    //[IntentFilter(new[] { NfcAdapter.ActionNdefDiscovered, NfcAdapter.ActionTagDiscovered, Intent.CategoryDefault })]
-
     public class MainActivity : AppCompatActivity
     {
         Button btnMontare;
         Button btnDemontare;
         Button btnInfo;
+        Button btnIesire;
 
         private NfcAdapter _nfcAdapter;
 
@@ -56,6 +55,9 @@ namespace MWW_test
 
             btnInfo = FindViewById<Button>(Resource.Id.buttonInfo);
             btnInfo.Click += btnInfo_click;
+
+            btnIesire = FindViewById<Button>(Resource.Id.buttonIesire);
+            btnIesire.Click += btnIesire_click;
 
             _nfcAdapter = NfcAdapter.GetDefaultAdapter(this);
 
@@ -100,7 +102,8 @@ namespace MWW_test
         {
             if (intent.Action == NfcAdapter.ActionTagDiscovered)
             {
-                _infoMsg.Text = "Selectează o activitate înainte de scanare";
+                //_infoMsg.Text = "Selectează o activitate înainte de scanare";
+                Toast.MakeText(Android.App.Application.Context, "Selectează o activitate înainte de scanare", ToastLength.Short).Show();
             }
             else if (intent.Action == NfcAdapter.ActionNdefDiscovered)
             {
@@ -127,6 +130,11 @@ namespace MWW_test
             Android.Content.Intent intent = new Android.Content.Intent(this, typeof(InfoActivity));
             _infoMsg.Text = "";
             this.StartActivity(intent);
+        }
+
+        private void btnIesire_click(object sender, EventArgs e)
+        {
+            Finish();
         }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)

@@ -23,8 +23,8 @@
 	.section	.rodata..L.str.1,"aMS",%progbits,1
 	.type	.L.str.1, %object
 .L.str.1:
-	.asciz	"com.companyname.mww_test"
-	.size	.L.str.1, 25
+	.asciz	"com.zentiva.mww_custom_tool"
+	.size	.L.str.1, 28
 	.section	.data.application_config,"aw",%progbits
 	.type	application_config, %object
 	.p2align	2
@@ -82,7 +82,7 @@ mono_aot_mode_name:
 	.section	.rodata..L.str.8,"aMS",%progbits,1
 	.type	.L.str.8, %object
 .L.str.8:
-	.asciz	"13258f9c-e448-413c-9d97-600875fff169"
+	.asciz	"933aa710-a3a2-4cf7-9bb5-9aaf0fab553a"
 	.size	.L.str.8, 37
 	.section	.rodata..L.str.9,"aMS",%progbits,1
 	.type	.L.str.9, %object
