@@ -1,12 +1,11 @@
 ﻿<Properties StartupConfiguration="{5310B010-5790-43B8-B837-65E4256AB03B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MWW_test/MontareActivity.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MWW_test/Resources/layout/activity_main.xml">
     <Files>
       <File FileName="MWW_test/MainActivity.cs" Line="114" Column="9" />
-      <File FileName="MWW_test/MontareActivity.cs" Line="71" Column="40" />
-      <File FileName="MWW_test/MontareActivity_second.cs" />
-      <File FileName="MWW_test/Resources/layout/montareAct.xml" />
-      <File FileName="MWW_test/Resources/layout/montareAct_second.xml" />
-      <File FileName="MWW_test/Properties/AndroidManifest.xml" />
+      <File FileName="MWW_test/MontareActivity.cs" Line="59" Column="78" />
+      <File FileName="MWW_test/MontareActivity_second.cs" Line="58" Column="60" />
+      <File FileName="MWW_test/Resources/layout/montareAct.xml" Line="61" Column="42" />
+      <File FileName="MWW_test/Resources/layout/activity_main.xml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,18 +14,19 @@
             <Node name="MWW_test" expanded="True">
               <Node name="Properties" expanded="True" />
               <Node name="Resources" expanded="True">
-                <Node name="layout" expanded="True" />
+                <Node name="layout" expanded="True">
+                  <Node name="activity_main.xml" selected="True" />
+                </Node>
                 <Node name="mipmap-hdpi" expanded="True" />
                 <Node name="values" expanded="True" />
               </Node>
-              <Node name="MontareActivity.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.MWW__test AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="pixel_3a_xl" PreferredExecutionTarget="Android.pixel_2_pie_9_0_-_api_28" />
+  <MonoDevelop.Ide.ItemProperties.MWW__test AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="pixel_3a_xl" PreferredExecutionTarget="Android.ad51a832" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

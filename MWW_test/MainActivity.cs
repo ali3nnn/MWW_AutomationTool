@@ -17,6 +17,7 @@ using Java.Util;
 using Button = Android.Widget.Button;
 using Matcha.BackgroundService.Droid;
 using GR.Net.Maroulis.Library;
+using Java.Lang;
 
 namespace MWW_test
 {
@@ -132,9 +133,11 @@ namespace MWW_test
             this.StartActivity(intent);
         }
 
+        [Obsolete]
         private void btnIesire_click(object sender, EventArgs e)
         {
-            Finish();
+            //Finish();
+            Android.OS.Process.KillProcess(Android.OS.Process.MyPid());
         }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
