@@ -35,6 +35,17 @@
     </activity>
     <activity android:label="DemontareActivity" android:name="crc64c0968eda899bde30.DemontareActivity" />
     <activity android:label="InfoActivity" android:name="crc64c0968eda899bde30.InfoActivity" />
+    <activity android:configChanges="orientation|screenSize" android:label="MontareActivity_second" android:theme="@style/AppTheme" android:name="crc64c0968eda899bde30.MontareActivity_second">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+        <action android:name="android.nfc.action.TAG_DISCOVERED" />
+        <action android:name="android.intent.category.DEFAULT" />
+      </intent-filter>
+    </activity>
     <service android:name="crc6434dd9c7954ad5145.MatchaBackgroundService" />
     <service android:name="crc64a98abb514ffad9f1.KeepAliveService" />
     <receiver android:enabled="true" android:exported="false" android:label="Essentials Battery Broadcast Receiver" android:name="crc64a0e0a82d0db9a07d.BatteryBroadcastReceiver" />

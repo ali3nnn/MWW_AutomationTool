@@ -37,6 +37,7 @@ LinearLayout;obj/Debug/res/layout/activity_main.xml
 LinearLayout;obj/Debug/res/layout/demontareact.xml
 LinearLayout;obj/Debug/res/layout/infoact.xml
 LinearLayout;obj/Debug/res/layout/montareact.xml
+LinearLayout;obj/Debug/res/layout/montareact_second.xml
 LinearLayout;obj/Debug/res/layout_card_item.xml
 paths;/Users/alexmac/Projects/MWW_AutomationTool/MWW_test/obj/Debug/lp/40/jl/res/xml/xamarin_essentials_fileprovider_file_paths.xml
 RelativeLayout;/Users/alexmac/Projects/MWW_AutomationTool/MWW_test/obj/Debug/lp/0/jl/res/layout/splash.xml
@@ -61,6 +62,7 @@ TextView;obj/Debug/res/layout/activity_main.xml
 TextView;obj/Debug/res/layout/demontareact.xml
 TextView;obj/Debug/res/layout/infoact.xml
 TextView;obj/Debug/res/layout/montareact.xml
+TextView;obj/Debug/res/layout/montareact_second.xml
 translate;/Users/alexmac/Projects/MWW_AutomationTool/MWW_test/obj/Debug/lp/41/jl/res/anim/enterfromleft.xml
 translate;/Users/alexmac/Projects/MWW_AutomationTool/MWW_test/obj/Debug/lp/41/jl/res/anim/enterfromright.xml
 translate;/Users/alexmac/Projects/MWW_AutomationTool/MWW_test/obj/Debug/lp/41/jl/res/anim/exittoleft.xml

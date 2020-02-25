@@ -82,7 +82,7 @@ mono_aot_mode_name:
 	.section	.rodata..L.str.8,"aMS",%progbits,1
 	.type	.L.str.8, %object
 .L.str.8:
-	.asciz	"933aa710-a3a2-4cf7-9bb5-9aaf0fab553a"
+	.asciz	"5b9a4e10-e022-4b3d-823d-5186465eea50"
 	.size	.L.str.8, 37
 	.section	.rodata..L.str.9,"aMS",%progbits,1
 	.type	.L.str.9, %object

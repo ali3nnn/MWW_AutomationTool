@@ -1,21 +1,21 @@
 ﻿<Properties StartupConfiguration="{5310B010-5790-43B8-B837-65E4256AB03B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MWW_test/Resources/layout/montareAct.xml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MWW_test/Resources/layout/montareAct_second.xml">
     <Files>
-      <File FileName="MWW_test/MainActivity.cs" Line="50" Column="74" />
-      <File FileName="MWW_test/Resources/layout/activity_main.xml" Line="65" Column="44" />
-      <File FileName="MWW_test/Resources/layout/montareAct.xml" Line="1" Column="1" />
+      <File FileName="MWW_test/MainActivity.cs" Line="118" Column="41" />
+      <File FileName="MWW_test/MontareActivity.cs" Line="54" Column="62" />
+      <File FileName="MWW_test/MontareActivity_second.cs" Line="51" Column="62" />
+      <File FileName="MWW_test/Resources/layout/montareAct.xml" Line="26" Column="26" />
+      <File FileName="MWW_test/Resources/layout/montareAct_second.xml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MWW_test" expanded="True">
             <Node name="MWW_test" expanded="True">
-              <Node name="Properties" expanded="True" />
               <Node name="Resources" expanded="True">
                 <Node name="layout" expanded="True">
-                  <Node name="montareAct.xml" selected="True" />
+                  <Node name="montareAct_second.xml" selected="True" />
                 </Node>
-                <Node name="values" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -23,7 +23,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.MWW__test AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.ad51a832" />
+  <MonoDevelop.Ide.ItemProperties.MWW__test AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="pixel_3a_xl" PreferredExecutionTarget="Android.pixel_2_pie_9_0_-_api_28" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

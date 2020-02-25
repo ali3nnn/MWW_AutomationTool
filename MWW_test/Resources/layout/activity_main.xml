@@ -63,7 +63,14 @@
                 android:layout_columnWeight="1"
                 android:layout_width="1dp"
                 android:layout_height="1dp"
-                android:textSize="25dp"
+                android:textSize="20dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="17.5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableBottom="@drawable/rsz_1maintenance"
+                android:drawablePadding="-50dp"
+                android:paddingBottom="100dp"
                 android:text="Montare" />
 
             <Button
@@ -73,7 +80,14 @@
                 android:layout_rowWeight="1"
                 android:layout_width="1dp"
                 android:layout_height="1dp"
-                android:textSize="25dp"
+                android:textSize="20dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="17.5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableBottom="@drawable/rsz_1eject"
+                android:drawablePadding="-50dp"
+                android:paddingBottom="100dp"
                 android:text="Demontare" />
     
             <Button
@@ -83,7 +97,14 @@
                 android:layout_rowWeight="1"
                 android:layout_width="1dp"
                 android:layout_height="1dp"
-                android:textSize="25dp"
+                android:textSize="20dp"
+                android:layout_marginTop="17.5dp"
+                android:layout_marginBottom="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableBottom="@drawable/rsz_2info"
+                android:drawablePadding="-50dp"
+                android:paddingBottom="100dp"
                 android:text="INFO"/>
     
             <Button
@@ -93,7 +114,14 @@
                 android:layout_rowWeight="1"
                 android:layout_width="1dp"
                 android:layout_height="1dp"
-                android:textSize="25dp"
+                android:textSize="20dp"
+                android:layout_marginTop="17.5dp"
+                android:layout_marginBottom="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableBottom="@drawable/rsz_off"
+                android:drawablePadding="-50dp"
+                android:paddingBottom="100dp"
                 android:text="EXIT" />   
 
         </GridLayout>

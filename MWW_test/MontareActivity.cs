@@ -23,6 +23,7 @@ using Matcha.BackgroundService.Droid;
 using AlertDialog = Android.App.AlertDialog;
 using Xamarin.Forms.Internals;
 using Android.Nfc.Tech;
+using static Android.Content.PM.PackageInstaller;
 
 namespace MWW_test
 {
@@ -36,17 +37,13 @@ namespace MWW_test
 
         private NfcAdapter _nfcAdapter;
         private TextView mTextView;
+        string codLF;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
 
-            //TabLayoutResource = Resource.Layout.Tabbar;
-            //ToolbarResource = Resource.Layout.Toolbar;
-            //Rg.Plugins.Popup.Popup.Init(this, savedInstanceState);
             BackgroundAggregator.Init(this);
-            //base.OnCreate(savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
-            //LoadApplication(new App());
 
             base.OnCreate(savedInstanceState);
 
@@ -138,8 +135,14 @@ namespace MWW_test
                             foreach (var r in NdefMessageParser.GetInstance().Parse((NdefMessage)message))
                             {
                                 //System.Diagnostics.Debug.WriteLine("TAG: " + r.Str());
-                                mTextView.Text = r.Str();
-                                //tags.Add(r.Str());
+                                codLF = r.Str();
+                                mTextView.Text += ": " + codLF;
+
+                                //change activity after scanning LF
+                                Intent intent2 = new Intent(this, typeof(MontareActivity_second));
+                                intent2.PutExtra("key", codLF);
+                                this.StartActivity(intent2);
+
                             }
 
                         }
