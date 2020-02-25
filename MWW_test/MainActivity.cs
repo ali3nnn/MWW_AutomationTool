@@ -115,7 +115,7 @@ namespace MWW_test
         {
             Android.Content.Intent intent = new Android.Content.Intent(this, typeof(MontareActivity));
             _infoMsg.Text = "";
-            this.StartActivity(intent); 
+            this.StartActivity(intent);
         }
 
         private void btnDemontare_click(object sender, EventArgs e)

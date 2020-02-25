@@ -18,6 +18,7 @@ android.support.v7.widget.Toolbar;/Users/alexmac/Projects/MWW_AutomationTool/MWW
 background;obj/Debug/res/mipmap-anydpi-v26/ic_launcher.xml
 background;obj/Debug/res/mipmap-anydpi-v26/ic_launcher_round.xml
 Button;obj/Debug/res/layout/activity_main.xml
+Button;obj/Debug/res/layout/montareact.xml
 cache-path;/Users/alexmac/Projects/MWW_AutomationTool/MWW_test/obj/Debug/lp/40/jl/res/xml/xamarin_essentials_fileprovider_file_paths.xml
 color;obj/Debug/res/values/colors.xml
 color;obj/Debug/res/values/ic_launcher_background.xml

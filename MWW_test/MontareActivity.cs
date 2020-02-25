@@ -36,8 +36,11 @@ namespace MWW_test
     {
 
         private NfcAdapter _nfcAdapter;
-        private TextView mTextView;
+        //private TextView mTextViewLF;
+        public TextView titleLF;
         string codLF;
+        private Boolean flag;
+        private Button goToMainMenuBtn;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -50,10 +53,24 @@ namespace MWW_test
             // Create your application here
             SetContentView(Resource.Layout.montareAct);
 
-            mTextView = (TextView)FindViewById(Resource.Id.textView2);
+            //mTextViewLF = (TextView)FindViewById(Resource.Id.textView2);
+            titleLF = (TextView)FindViewById(Resource.Id.textViewLF);
+
+            goToMainMenuBtn = FindViewById<Button>(Resource.Id.gotomainmenu);
+            goToMainMenuBtn.Click += goToMainMenuBtn_click;
+
+            titleLF.Text = "Scaneaza un LF";
 
             _nfcAdapter = NfcAdapter.GetDefaultAdapter(this);
 
+            flag = false;
+
+        }
+
+        private void goToMainMenuBtn_click(object sender, EventArgs e)
+        {
+            Intent intent = new Intent(this, typeof(MainActivity));
+            this.StartActivity(intent);
         }
 
         protected override void OnResume()
@@ -117,9 +134,9 @@ namespace MWW_test
                     tags.Add(null);
 
                 var tag = intent.GetParcelableExtra(NfcAdapter.ExtraTag) as Tag;
-                if (tag != null)
+                if (tag != null && flag == false)
                 {
-
+                    flag = true;
                     var rawTagMessages = intent.GetParcelableArrayExtra(NfcAdapter.ExtraTag);
 
                     // First get all the NdefMessage
@@ -136,11 +153,10 @@ namespace MWW_test
                             {
                                 //System.Diagnostics.Debug.WriteLine("TAG: " + r.Str());
                                 codLF = r.Str();
-                                mTextView.Text += ": " + codLF;
 
-                                //change activity after scanning LF
+                                //change activity after scanning LF and pass codLF through
                                 Intent intent2 = new Intent(this, typeof(MontareActivity_second));
-                                intent2.PutExtra("key", codLF);
+                                intent2.PutExtra("codLF", codLF);
                                 this.StartActivity(intent2);
 
                             }
@@ -158,7 +174,6 @@ namespace MWW_test
                 System.Diagnostics.Debug.WriteLine("ActionNdefDiscovered");
             }
         }
-
 
 
     }

@@ -1025,7 +1025,6 @@
 /Users/alexmac/Projects/MWW_AutomationTool/MWW_test/obj/Debug/android/environment.armeabi-v7a.o
 /Users/alexmac/Projects/MWW_AutomationTool/MWW_test/obj/Debug/app_shared_libraries/armeabi-v7a/libxamarin-app.so
 /Users/alexmac/Projects/MWW_AutomationTool/MWW_test/obj/Debug/android/bin/classes.dex
-/Users/alexmac/Projects/MWW_AutomationTool/MWW_test/obj/Debug/stamp/SetupDependenciesForDesigner.stamp
 /Users/alexmac/Projects/MWW_AutomationTool/MWW_test/obj/Debug/stamp/_BuildAdditionalResourcesCache.stamp
 /Users/alexmac/Projects/MWW_AutomationTool/MWW_test/obj/Debug/stamp/_CleanIntermediateIfNuGetsChange.stamp
 /Users/alexmac/Projects/MWW_AutomationTool/MWW_test/obj/Debug/stamp/_CompileToDalvik.stamp
@@ -1037,3 +1036,5 @@
 /Users/alexmac/Projects/MWW_AutomationTool/MWW_test/obj/Debug/stamp/_ResolveLibraryProjectImports.stamp
 /Users/alexmac/Projects/MWW_AutomationTool/MWW_test/obj/Debug/res/layout/montareact_second.xml
 /Users/alexmac/Projects/MWW_AutomationTool/MWW_test/obj/Debug/android/src/crc64c0968eda899bde30/MontareActivity_second.java
+/Users/alexmac/Projects/MWW_AutomationTool/MWW_test/obj/Debug/MWW_test.csprojAssemblyReference.cache
+/Users/alexmac/Projects/MWW_AutomationTool/MWW_test/obj/Debug/stamp/SetupDependenciesForDesigner.stamp

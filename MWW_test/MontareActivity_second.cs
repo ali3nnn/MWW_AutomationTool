@@ -35,9 +35,12 @@ namespace MWW_test
         private NfcAdapter _nfcAdapter;
         private TextView mTextView;
         private TextView mTextViewEMM;
+        public TextView titleLF;
         string codEMM;
+        public Boolean flag;
+        private Button goToMainMenuBtn;
 
-    protected override void OnCreate(Bundle savedInstanceState)
+        protected override void OnCreate(Bundle savedInstanceState)
         {
             BackgroundAggregator.Init(this);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
@@ -45,17 +48,31 @@ namespace MWW_test
             base.OnCreate(savedInstanceState);
 
             // Create your application here
-            SetContentView(Resource.Layout.montareAct_second);
+            SetContentView(Resource.Layout.montareAct);
 
             mTextView = (TextView)FindViewById(Resource.Id.textView2);
+            titleLF = (TextView)FindViewById(Resource.Id.textViewLF);
             mTextViewEMM = (TextView)FindViewById(Resource.Id.textView3);
+
+            goToMainMenuBtn = FindViewById<Button>(Resource.Id.gotomainmenu);
+            goToMainMenuBtn.Click += goToMainMenuBtn_click;
 
             _nfcAdapter = NfcAdapter.GetDefaultAdapter(this);
 
-            string text = Intent.GetStringExtra("key");
-            //Console.WriteLine(text);
-            mTextView.Text += ": "+text;
+            titleLF.Text = "Scaneaza un EMM";
 
+            flag = false;
+
+            string text = Intent.GetStringExtra("codLF");
+            //Console.WriteLine(text);
+            mTextView.Text += "TAG LF: " + text;
+
+        }
+
+        private void goToMainMenuBtn_click(object sender, EventArgs e)
+        {
+            Intent intent = new Intent(this, typeof(MainActivity));
+            this.StartActivity(intent);
         }
 
         protected override void OnResume()
@@ -119,9 +136,9 @@ namespace MWW_test
                     tags.Add(null);
 
                 var tag = intent.GetParcelableExtra(NfcAdapter.ExtraTag) as Tag;
-                if (tag != null)
+                if (tag != null && flag == false)
                 {
-
+                    flag = true;
                     var rawTagMessages = intent.GetParcelableArrayExtra(NfcAdapter.ExtraTag);
 
                     // First get all the NdefMessage
@@ -138,8 +155,8 @@ namespace MWW_test
                             {
                                 //System.Diagnostics.Debug.WriteLine("TAG: " + r.Str());
                                 codEMM = r.Str();
-                                mTextViewEMM.Text += ": " + codEMM;
-
+                                mTextViewEMM.Text += "TAG EMM: " + codEMM;
+                                titleLF.Text = "";
                                 //change activity after scanning LF
                                 //Intent intent2 = new Android.Content.Intent(this, typeof(MontareActivity_second));
                                 //this.StartActivity(intent2);
