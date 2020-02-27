@@ -11,6 +11,7 @@ public class MontareActivity
 	static {
 		__md_methods = 
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
+			"n_onBackPressed:()V:GetOnBackPressedHandler\n" +
 			"n_onResume:()V:GetOnResumeHandler\n" +
 			"n_onPause:()V:GetOnPauseHandler\n" +
 			"n_onNewIntent:(Landroid/content/Intent;)V:GetOnNewIntent_Landroid_content_Intent_Handler\n" +
@@ -33,6 +34,14 @@ public class MontareActivity
 	}
 
 	private native void n_onCreate (android.os.Bundle p0);
+
+
+	public void onBackPressed ()
+	{
+		n_onBackPressed ();
+	}
+
+	private native void n_onBackPressed ();
 
 
 	public void onResume ()

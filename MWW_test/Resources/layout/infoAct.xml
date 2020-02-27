@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	android:orientation="horizontal"
+	android:orientation="vertical"
 	android:minWidth="25px"
 	android:minHeight="25px"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-    android:gravity="center"
+    android:gravity="top"
 	android:id="@+id/linearLayout1"
 	android:background="@color/cardview_dark_background">
 	<TextView
@@ -15,7 +15,23 @@
 		android:id="@+id/textView1"
 		android:textColor="@android:color/white"
 		android:textSize="50dp"
-		android:layout_gravity="top"
+		android:layout_gravity="center"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:orientation="vertical"
+	    android:minWidth="25px"
+	    android:minHeight="25px"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:gravity="bottom">
+        <Button
+            android:text="MERGI LA MENIUL PRINCIPAL"
+            android:id="@+id/gotomainmenu"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp">
+        </Button>
+    </LinearLayout>
 </LinearLayout>

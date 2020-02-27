@@ -23,8 +23,7 @@ namespace MWW_test
 {
     //[Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
     //Icon = "@mipmap/icon"
-
-    [Activity(Label = "MWW_test", Theme = "@style/AppTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "Zentiva MWW Tool", Icon = "@mipmap/ic_launcher3", Theme = "@style/AppTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     [IntentFilter(new[] { NfcAdapter.ActionNdefDiscovered, NfcAdapter.ActionTagDiscovered, Intent.CategoryDefault })]
 
     public class MainActivity : AppCompatActivity
@@ -117,6 +116,7 @@ namespace MWW_test
             Android.Content.Intent intent = new Android.Content.Intent(this, typeof(MontareActivity));
             _infoMsg.Text = "";
             this.StartActivity(intent);
+            Finish();
         }
 
         private void btnDemontare_click(object sender, EventArgs e)
@@ -124,6 +124,7 @@ namespace MWW_test
             Android.Content.Intent intent = new Android.Content.Intent(this, typeof(DemontareActivity));
             _infoMsg.Text = "";
             this.StartActivity(intent);
+            Finish();
         }
 
         private void btnInfo_click(object sender, EventArgs e)
@@ -131,6 +132,7 @@ namespace MWW_test
             Android.Content.Intent intent = new Android.Content.Intent(this, typeof(InfoActivity));
             _infoMsg.Text = "";
             this.StartActivity(intent);
+            Finish();
         }
 
         [Obsolete]

@@ -16,12 +16,34 @@ namespace MWW_test
     [Activity(Label = "InfoActivity")]
     public class InfoActivity : Activity
     {
+        private Button goToMainMenuBtn;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
-            //Create your application here
+            // Create your application here
             SetContentView(Resource.Layout.infoAct);
+
+            goToMainMenuBtn = FindViewById<Button>(Resource.Id.gotomainmenu);
+            goToMainMenuBtn.Click += goToMainMenuBtn_click;
+        }
+
+        public override void OnBackPressed()
+        {
+            //Toast.MakeText(Application.Context, "Back button pressed", ToastLength.Short).Show();
+            Intent intent2 = new Intent(this, typeof(MainActivity));
+            this.StartActivity(intent2);
+            Finish();
+            //return true // if you want to disable the back button
+        }
+
+        private void goToMainMenuBtn_click(object sender, EventArgs e)
+        {
+            Intent intent2 = new Intent(this, typeof(MainActivity));
+            this.StartActivity(intent2);
+            Finish();
+
         }
     }
 }

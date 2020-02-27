@@ -67,10 +67,21 @@ namespace MWW_test
 
         }
 
+        public override void OnBackPressed()
+        {
+            //Toast.MakeText(Application.Context, "Back button pressed", ToastLength.Short).Show();
+            Intent intent2 = new Intent(this, typeof(MainActivity));
+            this.StartActivity(intent2);
+            Finish();
+            //return true // if you want to disable the back button
+        }
+
         private void goToMainMenuBtn_click(object sender, EventArgs e)
         {
-            Intent intent = new Intent(this, typeof(MainActivity));
-            this.StartActivity(intent);
+            Intent intent2 = new Intent(this, typeof(MainActivity));
+            this.StartActivity(intent2);
+            Finish();
+
         }
 
         protected override void OnResume()
@@ -158,6 +169,7 @@ namespace MWW_test
                                 Intent intent2 = new Intent(this, typeof(MontareActivity_second));
                                 intent2.PutExtra("codLF", codLF);
                                 this.StartActivity(intent2);
+                                Finish();
 
                             }
 
